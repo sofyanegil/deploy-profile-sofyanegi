@@ -1,12 +1,66 @@
 <!-- public/index.html -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profile Page</title>
-</head>
-<body>
-  <h1>Hello, World!</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Sofyanegi</title>
+  </head>
+  <body>
+    <header>
+      <div class="headbar">
+        <h1>Sofyanegi</h1>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <article>
+          As a fresh graduate of Informatics Engineering with a growth mindset and a high level of curiosity, I am eager to take on new challenges and continuously expand my knowledge about technology. Currently, my focus is on becoming a
+          full- stack Web Engineer, utilizing frameworks such as Laravel, React, and Express. I am dedicated to ongoing learning and staying up- to- date with the latest advancements in technology. I am ready to make a valuable contribution
+          to any innovative tech team
+        </article>
+        <article>
+          <p>
+            I've successfully completed a variety of courses, from programming and web development to data science and graphic design. My skills now span JavaScript, Python, HTML/CSS, data analysis, and machine learning. Additionally, I've
+            honed my creative abilities in graphic design using tools like Adobe Photoshop and Illustrator. These five certificates serve as tangible proof of my commitment to continuous learning, encompassing both technical and creative
+            aspects, and showcase my dedication to staying current in the ever-evolving fields of technology and design.
+          </p>
+
+          <!-- Certificate Images -->
+          <div class="container-image">
+            <img class="certificate" src="https://storage.googleapis.com/deploy-profile-sofyanegi/bnsp.png" alt="Certificate 1" />
+            <img class="certificate" src="https://storage.googleapis.com/deploy-profile-sofyanegi/dbs.png" alt="Certificate 2" />
+            <img class="certificate" src="https://storage.googleapis.com/deploy-profile-sofyanegi/itsupport.png" alt="Certificate 3" />
+            <img class="certificate" src="https://storage.googleapis.com/deploy-profile-sofyanegi/dicoding.png" alt="Certificate 4" />
+          </div>
+        </article>
+      </div>
+      <aside>
+        <div class="container">
+          <div class="card">
+            <img src="https://storage.googleapis.com/deploy-profile-sofyanegi/profile.png" alt="Profile Picture" />
+            <h2>Sofyanegi</h2>
+            <p>Web Developer</p>
+            <a target="_blank" href="https://www.linkedin.com/in/sofyanegi/">LinkedIn</a>
+          </div>
+        </div>
+      </aside>
+    </main>
+    <footer>
+      <p>
+        Profile Page <a href="https://www.linkedin.com/in/sofyanegi/">@Sofyanegi</a>
+        &copy;
+        <span id="currentYear"></span>
+        <script>
+          document.getElementById('currentYear').innerHTML = new Date().getFullYear();
+        </script>
+      </p>
+    </footer>
+  </body>
 </html>
